@@ -23,7 +23,7 @@ login_form.addEventListener("submit",function(e){
         console.log("user nahi milraha");
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log("loginError",errorMessage);
+        alert(error);
       });
 })
 

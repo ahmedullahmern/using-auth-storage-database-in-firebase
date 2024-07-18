@@ -52,11 +52,12 @@ signup_form.addEventListener("submit", function (e) {
                 }).catch((err) => {
                     signup_btn.disabled = false 
                     signup_btn.innerText = "signup" 
+                    alert(err)
                 })
             }).catch((err) => {
                 signup_btn.disabled = false 
                 signup_btn.innerText = "signup" 
-                alert("uploading error")
+                alert(err)
             })
         })
         .catch((error) => {
@@ -64,7 +65,7 @@ signup_form.addEventListener("submit", function (e) {
             signup_btn.innerText = "signup" 
             const errorCode = error.code;
             const errorMessage = error.message;
-            alert(errorMessage)
+            alert(error)
             // ..
         });
 })
